@@ -1,0 +1,25 @@
+{
+  "required_segments": ["ST", "BHT", "NM1", "CLM", "SE"],
+  "rules": [
+    {
+      "segment": "NM1",
+      "element": "NM108",
+      "required": true,
+      "enum": ["XX", "MI"],
+      "error": "Invalid qualifier",
+      "explanation": "NM108 must identify the qualifier for the subscriber/provider identifier.",
+      "suggestion": "Use MI for subscriber ID or XX for NPI."
+    },
+    {
+      "segment": "NM1",
+      "element": "NM109",
+      "required": true,
+      "pattern": "^[A-Z0-9]{2,80}$",
+      "min_length": 2,
+      "max_length": 80,
+      "error": "Invalid identifier",
+      "explanation": "NM109 should be an alphanumeric identifier without spaces.",
+      "suggestion": "Replace NM109 with a valid payer/provider/subscriber ID."
+    }
+  ]
+}

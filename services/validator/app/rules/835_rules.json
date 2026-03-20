@@ -1,0 +1,15 @@
+{
+  "required_segments": ["ST", "BPR", "TRN", "CLP", "SE"],
+  "rules": [
+    {
+      "segment": "CLP",
+      "element": "CLP01",
+      "required": true,
+      "pattern": "^[A-Z0-9-]{1,38}$",
+      "max_length": 38,
+      "error": "Invalid claim identifier",
+      "explanation": "CLP01 is the payer claim control number.",
+      "suggestion": "Use the payer-issued claim control number."
+    }
+  ]
+}

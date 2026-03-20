@@ -1,0 +1,5 @@
+{
+  "837": {"required": ["ST", "BHT", "NM1", "CLM", "SE"]},
+  "835": {"required": ["ST", "BPR", "TRN", "SE"]},
+  "834": {"required": ["ST", "BGN", "INS", "SE"]}
+}
